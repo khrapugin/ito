@@ -1,0 +1,696 @@
+window.ITO_SEED = {
+  "people": [
+    {
+      "id": "D1",
+      "name": "Специалист 01",
+      "role": "Ведущий инженер",
+      "weekly": 40,
+      "active": 1
+    },
+    {
+      "id": "D2",
+      "name": "Специалист 02",
+      "role": "Проектировщик",
+      "weekly": 40,
+      "active": 1
+    },
+    {
+      "id": "D3",
+      "name": "Специалист 03",
+      "role": "Проектировщик",
+      "weekly": 40,
+      "active": 1
+    },
+    {
+      "id": "D4",
+      "name": "Специалист 04",
+      "role": "Младший проектировщик",
+      "weekly": 40,
+      "active": 1
+    },
+    {
+      "id": "D5",
+      "name": "Специалист 05",
+      "role": "Координатор",
+      "weekly": 40,
+      "active": 1
+    },
+    {
+      "id": "D6",
+      "name": "Специалист 06",
+      "role": "Инженер",
+      "weekly": 40,
+      "active": 1
+    }
+  ],
+  "projects": [
+    {
+      "id": "P1",
+      "name": "Учебный объект А"
+    },
+    {
+      "id": "P2",
+      "name": "Учебный объект Б"
+    },
+    {
+      "id": "P3",
+      "name": "Внутреннее развитие"
+    }
+  ],
+  "operations": [
+    {
+      "id": "O1",
+      "category": "Проектирование",
+      "name": "Комплект схем",
+      "unit": "комплект",
+      "norm": 32
+    },
+    {
+      "id": "O2",
+      "category": "Проектирование",
+      "name": "Рабочая документация",
+      "unit": "комплект",
+      "norm": 36
+    },
+    {
+      "id": "O3",
+      "category": "Подготовка",
+      "name": "Исходные материалы",
+      "unit": "комплект",
+      "norm": 24
+    },
+    {
+      "id": "O4",
+      "category": "Координация",
+      "name": "Согласование решений",
+      "unit": "комплект",
+      "norm": 28
+    },
+    {
+      "id": "O5",
+      "category": "Подготовка",
+      "name": "Подбор оборудования",
+      "unit": "комплект",
+      "norm": 28
+    },
+    {
+      "id": "O6",
+      "category": "Развитие",
+      "name": "Шаблон проверки",
+      "unit": "комплект",
+      "norm": 16
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "project_id": "P1",
+      "operation_id": "O1",
+      "title": "Проверенный комплект схем",
+      "planned": 32,
+      "qty": 1,
+      "due": "2026-10-16",
+      "status": "Принято",
+      "accepted": 1,
+      "rework": 0,
+      "reason": "Учебная оценка",
+      "source": "DEMO"
+    },
+    {
+      "id": "T2",
+      "project_id": "P1",
+      "operation_id": "O2",
+      "title": "Комплект рабочей документации",
+      "planned": 36,
+      "qty": 1,
+      "due": "2026-10-16",
+      "status": "Принято",
+      "accepted": 1,
+      "rework": 0,
+      "reason": "Учебная оценка",
+      "source": "DEMO"
+    },
+    {
+      "id": "T3",
+      "project_id": "P2",
+      "operation_id": "O1",
+      "title": "Схемы подключения оборудования",
+      "planned": 32,
+      "qty": 1,
+      "due": "2026-10-16",
+      "status": "Принято",
+      "accepted": 1,
+      "rework": 0,
+      "reason": "Учебная оценка",
+      "source": "DEMO"
+    },
+    {
+      "id": "T4",
+      "project_id": "P2",
+      "operation_id": "O3",
+      "title": "Реестр исходных данных",
+      "planned": 24,
+      "qty": 1,
+      "due": "2026-10-16",
+      "status": "Принято",
+      "accepted": 1,
+      "rework": 0,
+      "reason": "Учебная оценка",
+      "source": "DEMO"
+    },
+    {
+      "id": "T5",
+      "project_id": "P2",
+      "operation_id": "O4",
+      "title": "Согласованные технические решения",
+      "planned": 28,
+      "qty": 1,
+      "due": "2026-10-16",
+      "status": "Заблокировано",
+      "accepted": 0,
+      "rework": 0,
+      "reason": "Ожидаются исходные данные от смежного раздела",
+      "source": "DEMO"
+    },
+    {
+      "id": "T6",
+      "project_id": "P1",
+      "operation_id": "O5",
+      "title": "Спецификация оборудования",
+      "planned": 28,
+      "qty": 1,
+      "due": "2026-10-16",
+      "status": "В работе",
+      "accepted": 0,
+      "rework": 0,
+      "reason": "Учебная оценка",
+      "source": "DEMO"
+    },
+    {
+      "id": "T7",
+      "project_id": "P2",
+      "operation_id": "O4",
+      "title": "Проверка смежных разделов",
+      "planned": 20,
+      "qty": 1,
+      "due": "2026-10-16",
+      "status": "В работе",
+      "accepted": 0,
+      "rework": 0,
+      "reason": "Учебная оценка",
+      "source": "DEMO"
+    },
+    {
+      "id": "T8",
+      "project_id": "P3",
+      "operation_id": "O6",
+      "title": "Шаблон контроля документации",
+      "planned": 16,
+      "qty": 1,
+      "due": "2026-10-16",
+      "status": "В работе",
+      "accepted": 0,
+      "rework": 0,
+      "reason": "Учебная оценка",
+      "source": "DEMO"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "A1",
+      "task_id": "T1",
+      "person_id": "D1",
+      "week": "2026-10-12",
+      "hours": 32
+    },
+    {
+      "id": "A2",
+      "task_id": "T2",
+      "person_id": "D2",
+      "week": "2026-10-12",
+      "hours": 36
+    },
+    {
+      "id": "A3",
+      "task_id": "T3",
+      "person_id": "D3",
+      "week": "2026-10-12",
+      "hours": 32
+    },
+    {
+      "id": "A4",
+      "task_id": "T4",
+      "person_id": "D4",
+      "week": "2026-10-12",
+      "hours": 24
+    },
+    {
+      "id": "A5",
+      "task_id": "T5",
+      "person_id": "D5",
+      "week": "2026-10-12",
+      "hours": 28
+    },
+    {
+      "id": "A6",
+      "task_id": "T6",
+      "person_id": "D6",
+      "week": "2026-10-12",
+      "hours": 28
+    },
+    {
+      "id": "A7",
+      "task_id": "T7",
+      "person_id": "D1",
+      "week": "2026-10-12",
+      "hours": 20
+    },
+    {
+      "id": "A8",
+      "task_id": "T8",
+      "person_id": "D6",
+      "week": "2026-10-12",
+      "hours": 16
+    }
+  ],
+  "actuals": [
+    {
+      "id": "F1",
+      "task_id": "T1",
+      "person_id": "D1",
+      "day": "2026-10-12",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F2",
+      "task_id": "T1",
+      "person_id": "D1",
+      "day": "2026-10-13",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F3",
+      "task_id": "T1",
+      "person_id": "D1",
+      "day": "2026-10-14",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F4",
+      "task_id": "T1",
+      "person_id": "D1",
+      "day": "2026-10-15",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F5",
+      "task_id": "T2",
+      "person_id": "D2",
+      "day": "2026-10-12",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F6",
+      "task_id": "T2",
+      "person_id": "D2",
+      "day": "2026-10-13",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F7",
+      "task_id": "T2",
+      "person_id": "D2",
+      "day": "2026-10-14",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F8",
+      "task_id": "T2",
+      "person_id": "D2",
+      "day": "2026-10-15",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F9",
+      "task_id": "T3",
+      "person_id": "D3",
+      "day": "2026-10-12",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F10",
+      "task_id": "T3",
+      "person_id": "D3",
+      "day": "2026-10-13",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F11",
+      "task_id": "T3",
+      "person_id": "D3",
+      "day": "2026-10-14",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F12",
+      "task_id": "T3",
+      "person_id": "D3",
+      "day": "2026-10-15",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F13",
+      "task_id": "T4",
+      "person_id": "D4",
+      "day": "2026-10-12",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F14",
+      "task_id": "T4",
+      "person_id": "D4",
+      "day": "2026-10-13",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F15",
+      "task_id": "T4",
+      "person_id": "D4",
+      "day": "2026-10-14",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F16",
+      "task_id": "T5",
+      "person_id": "D5",
+      "day": "2026-10-12",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F17",
+      "task_id": "T6",
+      "person_id": "D6",
+      "day": "2026-10-12",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F18",
+      "task_id": "T6",
+      "person_id": "D6",
+      "day": "2026-10-13",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F19",
+      "task_id": "T7",
+      "person_id": "D1",
+      "day": "2026-10-12",
+      "hours": 8,
+      "kind": "work"
+    },
+    {
+      "id": "F20",
+      "task_id": "T8",
+      "person_id": "D6",
+      "day": "2026-10-12",
+      "hours": 4,
+      "kind": "work"
+    },
+    {
+      "id": "F21",
+      "task_id": "T1",
+      "person_id": "D1",
+      "day": "2026-10-16",
+      "hours": 4,
+      "kind": "rework",
+      "reason": "Корректировка схем"
+    },
+    {
+      "id": "F22",
+      "task_id": "T1",
+      "person_id": "D1",
+      "day": "2026-10-16",
+      "hours": 4,
+      "kind": "loss",
+      "reason": "Ожидание уточнения"
+    },
+    {
+      "id": "F23",
+      "task_id": "T5",
+      "person_id": "D5",
+      "day": "2026-10-16",
+      "hours": 4,
+      "kind": "loss",
+      "reason": "Ожидание исходных данных"
+    }
+  ],
+  "absences": [],
+  "skills": [],
+  "assessments": [],
+  "imports": [],
+  "snapshots": [
+    {
+      "id": "S1",
+      "week": "2026-10-12",
+      "created_at": "2026-10-12T06:00:00Z",
+      "people": [
+        {
+          "id": "D1",
+          "name": "Специалист 01",
+          "role": "Ведущий инженер",
+          "weekly": 40,
+          "active": 1
+        },
+        {
+          "id": "D2",
+          "name": "Специалист 02",
+          "role": "Проектировщик",
+          "weekly": 40,
+          "active": 1
+        },
+        {
+          "id": "D3",
+          "name": "Специалист 03",
+          "role": "Проектировщик",
+          "weekly": 40,
+          "active": 1
+        },
+        {
+          "id": "D4",
+          "name": "Специалист 04",
+          "role": "Младший проектировщик",
+          "weekly": 40,
+          "active": 1
+        },
+        {
+          "id": "D5",
+          "name": "Специалист 05",
+          "role": "Координатор",
+          "weekly": 40,
+          "active": 1
+        },
+        {
+          "id": "D6",
+          "name": "Специалист 06",
+          "role": "Инженер",
+          "weekly": 40,
+          "active": 1
+        }
+      ],
+      "absences": [],
+      "assignments": [
+        {
+          "id": "A1",
+          "task_id": "T1",
+          "person_id": "D1",
+          "week": "2026-10-12",
+          "hours": 32
+        },
+        {
+          "id": "A2",
+          "task_id": "T2",
+          "person_id": "D2",
+          "week": "2026-10-12",
+          "hours": 36
+        },
+        {
+          "id": "A3",
+          "task_id": "T3",
+          "person_id": "D3",
+          "week": "2026-10-12",
+          "hours": 32
+        },
+        {
+          "id": "A4",
+          "task_id": "T4",
+          "person_id": "D4",
+          "week": "2026-10-12",
+          "hours": 24
+        },
+        {
+          "id": "A5",
+          "task_id": "T5",
+          "person_id": "D5",
+          "week": "2026-10-12",
+          "hours": 28
+        },
+        {
+          "id": "A6",
+          "task_id": "T6",
+          "person_id": "D6",
+          "week": "2026-10-12",
+          "hours": 28
+        },
+        {
+          "id": "A7",
+          "task_id": "T7",
+          "person_id": "D1",
+          "week": "2026-10-12",
+          "hours": 20
+        },
+        {
+          "id": "A8",
+          "task_id": "T8",
+          "person_id": "D6",
+          "week": "2026-10-12",
+          "hours": 16
+        }
+      ],
+      "entries": [
+        {
+          "task_id": "T1",
+          "title": "Проверенный комплект схем",
+          "hours": 32,
+          "planned": 32
+        },
+        {
+          "task_id": "T2",
+          "title": "Комплект рабочей документации",
+          "hours": 36,
+          "planned": 36
+        },
+        {
+          "task_id": "T3",
+          "title": "Схемы подключения оборудования",
+          "hours": 32,
+          "planned": 32
+        },
+        {
+          "task_id": "T4",
+          "title": "Реестр исходных данных",
+          "hours": 24,
+          "planned": 24
+        },
+        {
+          "task_id": "T5",
+          "title": "Согласованные технические решения",
+          "hours": 28,
+          "planned": 28
+        },
+        {
+          "task_id": "T6",
+          "title": "Спецификация оборудования",
+          "hours": 28,
+          "planned": 28
+        },
+        {
+          "task_id": "T7",
+          "title": "Проверка смежных разделов",
+          "hours": 20,
+          "planned": 20
+        },
+        {
+          "task_id": "T8",
+          "title": "Шаблон контроля документации",
+          "hours": 16,
+          "planned": 16
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "V1",
+      "action": "accept",
+      "task_id": "T1",
+      "day": "2026-10-16",
+      "created_at": "2026-10-16T15:00:00Z",
+      "result": "Учебный результат проверен по чек-листу",
+      "accepted_by": "Руководитель учебного отдела",
+      "actual_complete": true,
+      "quality_reviewed": true,
+      "remarks": 1,
+      "planned_hours": 32,
+      "current_plan": 32,
+      "actual_hours": 40,
+      "rework_hours": 4
+    },
+    {
+      "id": "V2",
+      "action": "accept",
+      "task_id": "T2",
+      "day": "2026-10-16",
+      "created_at": "2026-10-16T15:00:00Z",
+      "result": "Учебный результат проверен по чек-листу",
+      "accepted_by": "Руководитель учебного отдела",
+      "actual_complete": true,
+      "quality_reviewed": true,
+      "remarks": 0,
+      "planned_hours": 36,
+      "current_plan": 36,
+      "actual_hours": 32,
+      "rework_hours": 0
+    },
+    {
+      "id": "V3",
+      "action": "accept",
+      "task_id": "T3",
+      "day": "2026-10-16",
+      "created_at": "2026-10-16T15:00:00Z",
+      "result": "Учебный результат проверен по чек-листу",
+      "accepted_by": "Руководитель учебного отдела",
+      "actual_complete": true,
+      "quality_reviewed": true,
+      "remarks": 0,
+      "planned_hours": 32,
+      "current_plan": 32,
+      "actual_hours": 32,
+      "rework_hours": 0
+    },
+    {
+      "id": "V4",
+      "action": "accept",
+      "task_id": "T4",
+      "day": "2026-10-16",
+      "created_at": "2026-10-16T15:00:00Z",
+      "result": "Учебный результат проверен по чек-листу",
+      "accepted_by": "Руководитель учебного отдела",
+      "actual_complete": true,
+      "quality_reviewed": true,
+      "remarks": 0,
+      "planned_hours": 24,
+      "current_plan": 24,
+      "actual_hours": 24,
+      "rework_hours": 0
+    }
+  ],
+  "schema_version": 5
+};
