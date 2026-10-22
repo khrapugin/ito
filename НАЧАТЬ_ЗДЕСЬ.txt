@@ -1,0 +1,47 @@
+ИТО — КОМПЛЕКТ ДЛЯ ПУБЛИКАЦИИ НА GITHUB
+Версия 0.6.1
+
+1. ПРОВЕРЬТЕ ДЕМО
+Откройте docs/index.html или ОТКРЫТЬ_ПРЕЗЕНТАЦИЮ.bat.
+Ничего устанавливать не нужно. Все данные учебные.
+
+2. СОЗДАЙТЕ РЕПОЗИТОРИЙ НА GITHUB
+Предлагаемое название: ito-department-demo.
+Для обычного публичного демо выберите Public.
+В закрытом репозитории доступность Pages зависит от тарифа.
+Открытую лицензию пакет не назначает — её выбирает владелец.
+
+3. ЗАГРУЗИТЕ ФАЙЛЫ
+Распакуйте ZIP. В GitHub выберите Upload files / Add file → Upload files.
+Загрузите СОДЕРЖИМОЕ папки ITO_GitHub_Pack, сохраняя подпапки.
+В корне репозитория должны оказаться docs, app, tools и README.md.
+Не загружайте ZIP вместо файлов и не создавайте лишний уровень ITO_GitHub_Pack/docs.
+Проверьте наличие .gitignore, .gitattributes и docs/.nojekyll.
+Сохраните изменения в main (Commit changes).
+
+4. ВКЛЮЧИТЕ САЙТ
+Settings → Pages → Deploy from a branch → main → /docs → Save.
+Дождитесь завершения развёртывания. GitHub покажет ссылку на сайт.
+Формат: https://ВАШ_ЛОГИН.github.io/НАЗВАНИЕ_РЕПОЗИТОРИЯ/
+Для демонстрации Node.js, Python и отдельный хостинг не требуются.
+
+5. ЧТО ПОЛУЧИТСЯ
+Публичная презентация и интерактивное демо приложения.
+Демо НЕ собирает настоящие ответы сотрудников: всё сбрасывается при обновлении.
+Для общей базы и записи ответов нужна защищённая серверная версия.
+Локальная серверная основа лежит в app; инструкции — README.md и DEPLOYMENT.md.
+
+6. ПОВТОРНАЯ СБОРКА ПОСЛЕ ПРАВОК
+Нужен Python 3.11+. Запустите BUILD_RELEASE.bat.
+Либо из папки пакета: python tools/build.py
+Новый архив появится в dist/ITO_GitHub_Pack_0.6.1.zip.
+Сборка включает только файлы из release-files.txt; базы и временные файлы исключены.
+Проверка исходного комплекта: python tools/build.py --check
+Сборка ничего не публикует и не подключается к аккаунту GitHub.
+
+Полное описание: README.md
+Сценарий показа: DEMO_GUIDE.md
+
+Официальные инструкции:
+https://docs.github.com/ru/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
